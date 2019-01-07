@@ -10,24 +10,23 @@ rm -rf ~/.cache/tracker ~/.local/share/tracker
 # Purge everything else
 sudo apt purge rhythmbox gnome-contacts gnome-mahjongg gnome-mines gnome-sudoku gnome-music gnome-maps gnome-photos gnome-weather gnome-documents rhythmbox empathy evolution aisleriot brasero* gedit simple-scan gnome-calendar
 
-# Get TLP PPA
+# TLP PPA
 sudo add-apt-repository ppa:linrunner/tlp -y
 
-# Get KeepassXC PPA
+# KeepassXC PPA
 sudo add-apt-repository ppa:phoerious/keepassxc -y
 
-# Update && Upgrade
-sudo apt upgrade && sudo apt upgrade
+# Libreoffice PPA
+sudo add-apt-repository ppa:libreoffice/ppa
 
-# Install safe-rm
-sudo apt install safe-rm
+sudo apt update 
+sudo apt upgrade
 
-# Install KeepassXC
 sudo apt install keepassxc 
+sudo apt install tlp
+sudo apt install libreoffice
+sudo apt install vim
 
-# Remove Libreoffice
-sudo apt-get remove --purge libreoffice*
-
-# Final Clean
+# done
 sudo apt-get clean
 sudo apt-get autoremove
