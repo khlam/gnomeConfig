@@ -22,7 +22,7 @@ sudo add-apt-repository ppa:libreoffice/ppa
 sudo apt update 
 sudo apt upgrade
 
-sudo apt install keepassxc tlp libreoffice vim gnome-tweak-tool
+sudo apt install keepassxc tlp libreoffice vim
 
 # done
 sudo apt-get clean
