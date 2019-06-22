@@ -13,6 +13,9 @@ mv xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4
 # Purge everything else
 sudo apt purge rhythmbox gnome-contacts gnome-mahjongg gnome-mines gnome-sudoku gnome-music gnome-maps gnome-photos gnome-weather gnome-documents rhythmbox empathy evolution aisleriot brasero* gedit simple-scan gnome-calendar thunderbird
 
+# Remove Bluetooth
+sudo apt purge blueman bluez-utils bluez bluetooth
+
 # TLP PPA
 sudo add-apt-repository ppa:linrunner/tlp -y
 
